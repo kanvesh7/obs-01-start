@@ -1,0 +1,7 @@
+<p>User with <strong>ID {{ id }}</strong> was loaded</p>
+<button class="btn btn-primary" (click)="getUsersInfo()">Get Users Data</button>
+<div *ngIf="users">
+  <div *ngFor='let user of users'>
+    {{user.name}}
+  </div>
+</div>
